@@ -3,11 +3,13 @@
     --primary-white-color: #FFFFFF;
     --title-text-color: #434455;
     --accent-color: #4D5AE5;
+    --hover-color: #404BBF;
     --background-team: #F4F4FD;
     --accent-button: rgba(46, 47, 66, 0.7);
     --background-button: rgba(0, 0, 0, 0.15);
     --clients-button-color: #8E8F99;
     --footer-text-color: #E7E9FC;
+    --footer-link-color: #31D0AA;
 }
 
 body {
@@ -111,7 +113,7 @@ body {
 
 .link:hover,
 .link:focus {
-    color: var(--accent-color);
+    color: var(--hover-color);
 }
 
 .header-contacts {
@@ -138,7 +140,7 @@ body {
 
 .contact-link:hover,
 .contact-link:focus {
-    color: var(--accent-color);
+    color: var(--hover-color);
 }
 
 
@@ -231,6 +233,10 @@ body {
     background-color: var(--accent-color);
 }
 
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hover-color);
+}
 
 
 
@@ -505,7 +511,7 @@ body {
 
 .icon-link:hover,
 .icon-link:focus {
-    
+    background-color: var(--hover-color);
 }
 
 
@@ -578,6 +584,16 @@ body {
 
     fill: var(--clients-button-color);
     background-color: var(--primary-white-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    fill: var(--hover-color);
+}
+
+.clients-list .item:hover,
+.clients-list .item:focus {
+    border-color: var(--hover-color);
 }
 
 .clients-icon {
@@ -671,11 +687,14 @@ body {
     width: 40px;
     height: 40px;
 
-    border: none;
-    border-radius: 50%;
-
-    background-color: rgba(255, 255, 255, 0.1);
 }
+
+.link-footer:hover,
+.link-footer:focus {
+    background-color: var(--footer-link-color)
+}
+
+
 
 .social-list .item:not(:last-child) {
     margin-right: 16px;
@@ -689,12 +708,17 @@ body {
 
     cursor: pointer;
 
+    border: none;
+    border-radius: 50%;
+
     padding: 0;
     margin: 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .link-footer .icon {

@@ -9,6 +9,7 @@
     --clients-button-color: #8E8F99;
     --footer-text-color: #E7E9FC;
     --background-button-color: #404BBF;
+    --footer-link-color: #31D0AA;
 }
 
 body {
@@ -352,11 +353,6 @@ body {
 .social-list .item {
     width: 40px;
     height: 40px;
-
-    border: none;
-    border-radius: 50%;
-
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-list .item:not(:last-child) {
@@ -369,14 +365,24 @@ body {
     width: 100%;
     height: 100%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     cursor: pointer;
 
     padding: 0;
     margin: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: none;
+    border-radius: 50%;
+    
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.link-footer:hover,
+.link-footer:focus {
+    background-color: var(--footer-link-color);
 }
 
 .link-footer .icon {
